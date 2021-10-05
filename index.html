@@ -3,32 +3,45 @@
         <head>
                 <meta name="description" content="meeting notes">
                 <title>Animal Sharing</title>
+                <link rel="stylesheet" href="styles.css">
         </head>
         <body>
+                <header>
+                        <p>Today's meeting</p>
+                </header>
                 <h1>
                         Lovely Animal Sharing
                 </h1>
-                <h2>
-                        October 4th 2021
-                </h2>
+                <section>
+                        <h2>
+                                October 4th 2021
+                        </h2>
+                </section>
                 <div class = "attendace">
                         <h4>
-                                Present:
+                                <br>Present:
                         </h4>
                         <ul>
-                                <li>Jack Ma</li>
-                                <li>Steve Jobs</li>
+                                <li>
+                                        <b>Jack Ma</b>
+                                </li>
+                                <li>
+                                        <strong>Steve Jobs</strong>
+                                </li>
                         </ul>
                         <h4>
                                 Absent:
                         </h4>
                         <ul>
-                                <li>Bill Gates</li>
+                                <li>
+                                        <i>Bill Gates</i>
+                                </li>
                         </ul>
                 </div>
+                <hr>
                 <div class = "agenda">
                         <h4>
-                                Agenda:
+                                <a>Agenda:</a>
                         </h4>
                         <p>
                                 <em>Sharing some lovely animals' pictures.</em>
@@ -39,6 +52,10 @@
                                 Notes:
                         </h4>
                         <img src="corgi.jpeg" alt="Corgi-img" width="320" height="240">
+                        <details>
+                                <summary>Details</summary>
+                                picture of corgi
+                        </details>
                         <video width="320" height="240" controls>
                                 <source src="Corgi-video.mp4" type="video/mp4">
                         </video>
@@ -51,9 +68,28 @@
                                 Meeting Registration:
                         </h4>
                         <form>
-                                <label for="name">Name:</label><br>
-                                <input type="text" id="name" name="name"><br>
-                                <input type="submit" value="Submit">
+                                <textarea>
+                                Please enter your name
+                                </textarea>
+                                <fieldset>
+                                        <label for="name">Name:</label><br>
+                                        <input type="text" id="name" name="name"><br>
+                                        <input type="submit" value="Submit">
+                                </fieldset>
+                                <label for="department">Department</label><br>
+                                <input list="departments" id="department" name="department" />
+                                <datalist id = "departments">
+                                        <option value="Sales">
+                                        <option value="HR">
+                                        <option value="Marketing">
+                                </datalist>
+                                <label for="fruits">Choose a fruit:</label>
+                                <select name="fruits" id="fruits">
+                                        <option value="banana">banana</option>
+                                        <option value="apple">apple</option>
+                                        <option value="orange">orange</option>
+                                </select>
+                                <button type="button">Click</button>
                         </form>
                 </div>        
         </body>
