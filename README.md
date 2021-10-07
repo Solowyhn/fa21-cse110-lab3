@@ -1,2 +1,2 @@
-# CSE110-LAB2
-https://solowyhn.github.io/CSE110-LAB2/
+# fa21-cse110-lab3
+https://solowyhn.github.io/fa21-cse110-lab3/
