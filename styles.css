@@ -1,0 +1,93 @@
+/* css file for meeting minutes */
+h1 {
+        background-color: #567895;
+        color: white;
+}
+h2 {
+        color: hsl(9, 100%, 64%);
+}
+p,
+h3 {
+        color: #ff6347;
+}
+em{
+        text-decoration: overline;
+        text-align: center;
+        display: inline;
+}
+ul li {
+        margin: 2em;
+      }
+div + h4 {
+        font-size:medium;
+}
+p:active {
+        color: yellow;
+}
+button:hover {
+        color: yellow;
+      }
+span.block{
+        display: inline-block;
+}
+div ~ h4{
+        font-size:x-large;
+}
+div > p{
+        color:aquamarine;
+}
+#attendance {
+        margin: 10px 5px 15px 20px;
+        padding:10px 5px 15px 20px;
+        font-size: 1em; /* relative unit */
+        width: 5cm; /* absolute unit */
+}
+.agenda {
+        width: 5vw; /* relative unit */
+        font-size: 5px; /* absolute unit */
+        max-width:fit-content;
+        max-height:fit-content;
+        
+}
+.form {
+        height: 5vh; /* relative unit */
+        font-size: 5mm; /* absolute unit */
+        position: relative;
+}
+.box {
+        margin-top: -40px;
+        margin-right: 30px;
+        margin-bottom: 40px;
+        margin-left: 4em;
+        padding-top: 0;
+        padding-right: 30px;
+        padding-bottom: 40px;
+        padding-left: 4em;
+        border-top: 5px;
+        border-right: 1px;
+        border-bottom: 20px;
+        border-style: solid;
+        border-color: green;
+        border-width: 1px;
+        position: fixed;
+        background-color: #567895;
+}
+@media screen and (min-width: 600px) {
+        body {
+          background-color: rgb(144, 161, 238);
+        }
+      }
+
+@font-face {
+        font-family: Roboto-Black;
+        src: url(Roboto-Black.ttf);
+}
+* {
+        font-family: Roboto-Black;
+}
+div[class~="Notes"] {
+        font-size: large;
+}
+
+
+

@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
         <head>
+                <style>
+                .flex-container {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        background-color: DodgerBlue;
+                }    
+                .grid-container {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 10px;
+                        grid-auto-rows: minmax(100px, auto);
+                } 
+                .first {
+                        grid-column: 2 / 4;
+                        grid-row: 1 / 3;
+                }
+                .second {
+                        grid-column: 1 / 4;
+                        grid-row: 2 / 3;
+                }
+                </style>
                 <meta name="description" content="meeting notes">
                 <title>Animal Sharing</title>
                 <link rel="stylesheet" href="styles.css">
         </head>
         <body>
                 <header>
-                        <p>Today's meeting</p>
+                        <h1>Meeting Minutes</h1>
                 </header>
-                <h1>
+                <h2>
                         Lovely Animal Sharing
-                </h1>
+                </h2>
                 <section>
                         <h2>
                                 October 4th 2021
                         </h2>
                 </section>
-                <div class = "attendace">
+                <div id = "attendace">
+                        <div class="box">
                         <h4>
                                 <br>Present:
                         </h4>
@@ -30,13 +52,14 @@
                                 </li>
                         </ul>
                         <h4>
-                                Absent:
+                                <span class="block">Absent:</span>
                         </h4>
                         <ul>
                                 <li>
                                         <i>Bill Gates</i>
                                 </li>
                         </ul>
+                        </div>
                 </div>
                 <hr>
                 <div class = "agenda">
@@ -54,7 +77,7 @@
                         <img src="corgi.jpeg" alt="Corgi-img" width="320" height="240">
                         <details>
                                 <summary>Details</summary>
-                                picture of corgi
+                                <p class="block">picture of corgi</p>
                         </details>
                         <video width="320" height="240" controls>
                                 <source src="Corgi-video.mp4" type="video/mp4">
@@ -76,6 +99,7 @@
                                         <input type="text" id="name" name="name"><br>
                                         <input type="submit" value="Submit">
                                 </fieldset>
+                                <br>
                                 <label for="department">Department</label><br>
                                 <input list="departments" id="department" name="department" />
                                 <datalist id = "departments">
@@ -91,6 +115,18 @@
                                 </select>
                                 <button type="button">Click</button>
                         </form>
-                </div>        
+                </div>    
+                
+                <div class="flex-container">
+                        <div style="order: 3">1</div>
+                        <div style="flex-basis: 200px">2</div>
+                        <div>3</div>  
+                </div>
+
+                <div class="grid-container">
+                        <div class="first">first</div>
+                        <div class="second">second</div>
+                        <div class="third">third</div>
+                </div>
         </body>
 </html>
