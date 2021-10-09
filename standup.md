@@ -1,7 +1,7 @@
 ##Topic
 
-#Things have done
+#What did you do yesterday?
 
-#Things to do
+#What are you going to do today?
 
-#Things with problem
+#Do you have any obstacles?
